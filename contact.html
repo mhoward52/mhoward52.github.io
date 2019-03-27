@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
       <meta charset="UTF-8">
-       <title>Hello, I am Michael Howard</title>
+       <title>Michael Howard</title>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -13,6 +13,28 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </nav>
-          
+          <form method="POST" action="https://formspree.io/michael.howard.pha@icloud.com">
+            <input type="hidden" name="_next" value="//mhoward52.github.io/thanks.html">
+            <input type="text" name="_gotcha" style="display:none">   
+          <div>
+              <label for="name">Name</label>
+              <input id="name" type="text" name="name">
+          </div>
+          <div>
+              <label for="email">Email</label>
+              <input id="email" type="text" name="_replyto">
+          </div>
+          <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message"></textarea>
+          </div>
+          <div>
+              <input type="hidden" name="_subject" value="New submission!">
+          </div>
+          <div>
+              <input type="submit" value="Send">
+          </div>
+
+          </form>
     </body>
 </html>

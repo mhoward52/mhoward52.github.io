@@ -4,18 +4,23 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>Resume</title>
+       <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
        <meta name="description" content="This is a resume page for audio engineer positions">
        <meta name="keywords" content="resume, audio, engineer, recording, Pro Tools, music">
     </head>
     <body>
-        <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-      
+        <header>
+            <span class="logo">My Website</span>
+            <a id="toggleMenu">Menu</a>
+              <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="resume.html">Resume</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+          </header>
+          
       <h1>Michael Howard</h1>
   <main>
       <div class="address">
@@ -74,6 +79,21 @@
           </ul>
       </div>
   </main>
-      
+  <script>
+
+      var toggleMenu = document.getElementById('toggleMenu');
+      var nav = document.querySelector('nav');
+      toggleMenu.addEventListener(
+        'click',
+        function(){
+          if(nav.style.display=='block'){
+            nav.style.display='none';
+          }else{
+            nav.style.display='block';
+          }
+        }
+      );
+          </script>
+    
     </body>
 </html>

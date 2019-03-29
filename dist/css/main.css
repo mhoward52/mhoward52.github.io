@@ -68,25 +68,20 @@ main {
 @media only screen and (max-width: 960px) {
   main {
     max-width: 90%; }
-
   nav {
     display: none;
     background: #000; }
-
   #toggleMenu {
     display: block;
     float: right;
     line-height: 50px; }
-
   nav ul li a,
   nav ul li a:link,
   nav ul li a:visited {
     display: block;
     border-bottom: 1px solid #777; }
-
   header {
     position: relative; }
-
   nav {
     position: absolute;
     display: none;
@@ -95,5 +90,3 @@ main {
     left: 80%;
     right: 0;
     opacity: 0.5; } }
-
-/*# sourceMappingURL=main.css.map */

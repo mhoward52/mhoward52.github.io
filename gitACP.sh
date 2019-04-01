@@ -1,12 +1,17 @@
 #!/bin/bash
 
-git add .
-
-git commit -m $1
-
-if [ $# -ne 1 ] && [ ! $1 == " '' * '' " ]
+: '
+if [ $# -ne 1 ] || [[ ! " "$1" " == *" "'$1'" "* ]]
     then
         echo ERROR, need comment
+        exit 1
     else
-        echo File should just need a push
-fi
+'
+        # git add .
+
+        git commit -m $1
+
+        git push origin master
+        
+        echo "FILE(s) PUSHED"
+        

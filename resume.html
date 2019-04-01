@@ -5,99 +5,111 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>Resume</title>
        <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
-       <meta name="description" content="This is a resume page for audio engineer positions">
+       <meta name="description" content="This is my resume page for audio engineer positions">
        <meta name="keywords" content="resume, audio, engineer, recording, Pro Tools, music">
        <link rel="shortcut icon" href="https://image.shutterstock.com/image-vector/vector-sketch-illustration-dinamic-microphone-450w-178056266.jpg">
-
     </head>
+    
     <body>
-        <header>
-            <span class="logo">My Website</span>
-            <a id="toggleMenu">Menu</a>
-              <nav>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="resume.html">Resume</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </nav>
-          </header>
+      <header>
+          <span class="logo">My Website</span>
+          <a id="toggleMenu">Menu</a>
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+        </header>
           
-  <main>
-    <div class="titleName">
-      <h1>Michael Howard</h1>
-    </div>
-      <div class="address">
-        <p>2300 Jackson St</p>
-        <p>Gary, IN 46303</p>
-        <p>(800) 588-2300</p>
-      </div>
+      <main>
+        <div id="titleName">
+          <h3 id="nameTitle">MICHAEL HOWARD</h3>
+        </div>
 
-      <div class="summary">
-        <h2>Audio Recording Engineer</h2>
+        <div id="addressWrapper">
+          <div class="address">
+            2300 Jackson St &#9900 
+            Gary, IN 46303 &#9900 
+            (800) 588-2300
+          </div>
+        </div>
 
-        <p>Engineer well versed in live studio recording, mixing, and mastering music compositions 
-        of various genres.</p>
+          <div id="summary">
+            <h4 id="titleCenter">Audio Recording Engineer</h4>
 
-        <ul>
-          <li>Setup and calibration of equipment</li>
-          <li>Expertise in creating rough mixes and masters</li>
-        </ul>
-      </div>
+            <p>Engineer well versed in live studio recording, mixing, and mastering music compositions 
+            of various genres.</p>
 
-      <div class="competences">
-        <h3>Core Competences</h3>
+            <ul id="summaryList">
+              <li>Setup and calibration of equipment</li>
+              <li>Expertise in creating rough mixes and masters</li>
+            </ul>
+          </div>
 
-        <ul>
-            <li>Proficent in Pro Tools</li>
-            <li>Knowledgeable in audio plugins by multiple vendors</li>
-        </ul>
+          <div class="competences">
+            <h4 id="titleCenter"><i>Core Competences</i></h4>
 
-        <ul>
-            <li>Hardware and equipment trobleshooting</li>
-            <li>Acoustics calibration</li>
-        </ul>
-      </div>
+            <ul id="coreList" type="circle">
+                <li>Proficent in Pro Tools</li>
+                <li>Knowledgeable in audio plugins by multiple vendors</li>
+            </ul>
 
-      <div class="certifications">
-        <h2>Certifications / Technical Proficiencies</h2>
+            <ul id="coreList" type="circle">
+                <li>Hardware and equipment trobleshooting</li>
+                <li>Acoustics calibration</li>
+            </ul>
+          </div>
 
-        <ul>
-            <li>Master Audio Engineer I and II (Full Sail)</li>
-            <li>Pro Tools Certified Engineer (Avid)</li>
-            <li>Advanced Audio Technician III (Brightpoint)</li>
-        </ul>
-      </div>
+          <div id="certifications">
+            <h4 id="titleCenter">CERTIFICATIONS / TECHNICAL PROFICIENCIES</h4>
 
-      <div class="experience">
-        <h2>Professional Experience</h2>
-        <h3>Top Sound Studios -- Chicago, IL</h3> <h3>2017 -- Present</h3>
-        <p>Top Sound Studios provides multimedia recording, mixing and mastering for various musical genres.</p>
+            <div class="certBlock">
+              <p><i>Certifications:</i></p>
+              <p><i>Platforms:</i></p>
+              <p><i>Tools:</i></p>
+            </div>
 
-        <h3>Assistant Audio Engineer</h3>
-          <ul>
-            <li>Setup and maintenance of audio equipment</li>
-            <li>Scheduling of studio time with clients</li>
-            <li>Secondary recording functions during sessions</li>
-            <li>Mixing and mastering assistance</li>
-          </ul>
-      </div>
-  </main>
-  <script>
+            <div class="certBlock">
+                <p>Master Audio Engineer I and II, Pro Tools Certified Engineer, Advanced Audio Technician III </p>
+                <p>Mac OS, Windows</p>
+                <p>Pro Tools, Logic, Nuendo Live</p>
+            </div>
+          </div>
 
-      var toggleMenu = document.getElementById('toggleMenu');
-      var nav = document.querySelector('nav');
-      toggleMenu.addEventListener(
-        'click',
-        function(){
-          if(nav.style.display=='block'){
-            nav.style.display='none';
-          }else{
-            nav.style.display='block';
-          }
-        }
-      );
-          </script>
+          <div id="experience">
+            <h4 id="titleCenter">PROFESSIONAL EXPERIENCE</h4>
+            <div id="jobTimeline">
+              <h4>Top Sound Studios -- Chicago, IL</h4> 
+              <h4 class="jobDate">2017 -- Present</h4>
+            
+              <p>Top Sound Studios provides multimedia recording, mixing and mastering for various musical genres.</p>
+            </div>
+            <h4 class="jobTitle">Assistant Audio Engineer</h4>
+              <ul id="jobTitleList">
+                <li>Setup and maintenance of audio equipment</li>
+                <li>Scheduling of studio time with clients</li>
+                <li>Secondary recording functions during sessions</li>
+                <li>Mixing and mastering assistance</li>
+              </ul>
+          </div>
+      </main>
+      <script>
+
+          var toggleMenu = document.getElementById('toggleMenu');
+          var nav = document.querySelector('nav');
+          toggleMenu.addEventListener(
+            'click',
+            function(){
+              if(nav.style.display=='block'){
+                nav.style.display='none';
+              }else{
+                nav.style.display='block';
+              }
+            }
+          );
+      </script>
     
     </body>
 </html>
